@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    
+}
+
+body{
+
+    font-family: arial;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+
+}
+
+.img__logo{
+    width:200px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.nav{
+    /*margin-bottom: -130px;*/
+}
+
+.nav__container{
+    width: 1000px;
+    display: flex;
+   
+}
+
+.nav__link{
+    padding:15px;
+    text-decoration: none;
+    font-size: 20px;
+   
+}
+
+/******* BANNERS *******/
+
+.banner__container{
+    /*margin-top: -130px;*/
+    display:flex;
+   
+    
+    
+}
+
+
+.text__container{
+   
+    display: flex;
+    flex-direction:column;
+    justify-content: end;
+    margin-top: 50px;
+    gap: 30px;
+    width:60%;
+    
+}
+
+        .titulo__banner{
+
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width:72%;
+        }
+
+        .parrafo__banner{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        
+        
+        }
+
+        .link__banner{
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+
+            color:white;
+            background-color: blue;
+            width: 150px;
+            height: 50px;
+            
+            text-align: center;
+            align-content: center;
+            margin-bottom: 45px;
+        }
+
+.fig__banner{
+    margin-top:-130px;
+
+}
+
+    .img__banner{
+
+        
+    }
+/********************************************/
+
+
+/****************** CAJAS ******************/
+.cajas__container{
+    
+    background-color: blue;
+    display: flex;
+   align-items: center;
+   margin-top: -4px;
+
+}
+
+.text__caja__container{
+
+    background-color: blue;
+    width: 250px;
+    height: 200px;
+    color: #ffff;
+    text-align: center;
+    align-content: center;
+}
+
+.caja__titulo{
+
+    font-size: 40px;
+}
+
+.caja__parrafo{
+
+    font-size: 15px;
+}
+
+.lineav{
+    border-left: 2px solid white;
+    height: 60px;
+}
+
+
+/**********************media**********************/
+
+@media(max-width:1200px){
+
+    .banner__container{
+        flex-direction: column-reverse;
+         
+    }
+
+    .fig__banner{
+        margin-top: 0px; 
+       
+    }
+
+    .img__banner{
+
+        width: 350px;
+    }
+
+    .text__container{
+   
+        display: flex;
+        flex-direction:column;
+        justify-content: end;
+        margin-top: 20px;
+        gap: 30px;
+        width:100%;
+        
+    }
+
+    .titulo__banner{
+
+        font-size: 20px;
+        width:100%;
+    }
+
+
+
+
+    .caja__titulo{
+
+        font-size: 25px;
+    }
+    
+    .caja__parrafo{
+    
+        font-size: 10px;
+    }
+
+
+    .nav__link{
+        padding:8px;
+        font-size: 12px;
+       
+    }
+}
