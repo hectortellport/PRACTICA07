@@ -7,16 +7,19 @@ body{
 
     font-family: arial;
 }
+.header__container{
 
+    width: 100%;
+}
 .container{
-    width: 80%;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
 
 }
 
 .img__logo{
-    width:200px;
-    margin-top: 1em;
+    width:400px;
+    margin-top: 2em;
     margin-bottom: 0.5em;
 }
 
@@ -25,7 +28,7 @@ body{
 }
 
 .nav__container{
-    width: 1000px;
+    width: 100%;
     display: flex;
    
 }
@@ -42,9 +45,10 @@ body{
 .banner__container{
     /*margin-top: -130px;*/
     display:flex;
-   
-    
-    
+    flex-direction: column-reverse;
+    width: 100%;
+
+      
 }
 
 
@@ -52,23 +56,25 @@ body{
    
     display: flex;
     flex-direction:column;
-    justify-content: end;
+    /*justify-content: end;*/
     margin-top: 50px;
     gap: 30px;
-    width:60%;
+    width:100%;
     
 }
 
         .titulo__banner{
 
-            font-size: 40px;
+            font-size: 60px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            width:72%;
+            width:100%;
         }
 
         .parrafo__banner{
             font-family:Arial, Helvetica, sans-serif;
-            font-size: 18px;
+            font-size: 45px;
+            width:100%;
+            
         
         
         }
@@ -77,26 +83,27 @@ body{
             text-decoration: none;
             font-weight: bold;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 12px;
+            font-size: 35px;
 
             color:white;
             background-color: blue;
-            width: 150px;
-            height: 50px;
+            width: 300px;
+            height: 80px;
             
             text-align: center;
             align-content: center;
-            margin-bottom: 45px;
+            margin-top: 55px;
+            margin-bottom: 65px;
         }
 
 .fig__banner{
-    margin-top:-130px;
+    margin-top:50px;
 
 }
 
     .img__banner{
 
-        
+        width: 900px;
     }
 /********************************************/
 
@@ -139,57 +146,74 @@ body{
 
 /**********************media**********************/
 
-@media(max-width:1200px){
+@media(min-width:800px){
+
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    
+    }
+
+    .img__logo{
+        width:200px;
+        margin-top: 2em;
+        margin-bottom: 0.5em;
+    }
 
     .banner__container{
-        flex-direction: column-reverse;
-         
+        /*margin-top: -130px;*/
+        display:flex;
+        flex-direction: row;
+        width: 100%; 
     }
+    
 
-    .fig__banner{
-        margin-top: 0px; 
-       
-    }
-
-    .img__banner{
-
-        width: 350px;
-    }
-
-    .text__container{
+   /*********************************/
+   .text__container{
    
-        display: flex;
-        flex-direction:column;
-        justify-content: end;
-        margin-top: 20px;
-        gap: 30px;
-        width:100%;
-        
-    }
-
-    .titulo__banner{
-
-        font-size: 20px;
-        width:100%;
-    }
-
-
-
-
-    .caja__titulo{
-
-        font-size: 25px;
-    }
+  
+    justify-content: end;
+  
     
-    .caja__parrafo{
-    
-        font-size: 10px;
-    }
+}
+        .titulo__banner{
 
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width:100%;
+        }
 
-    .nav__link{
-        padding:8px;
-        font-size: 12px;
-       
-    }
+        .parrafo__banner{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            width:100%;
+        }
+
+        .link__banner{
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+
+            color:white;
+            background-color: blue;
+            width: 150px;
+            height: 40px;
+            
+            text-align: center;
+            align-content: center;
+            margin-top: 35px;
+            margin-bottom: 35px;
+        }
+
+        .fig__banner{
+        margin-top:-150px;
+        }
+
+        .img__banner{
+
+        width: 460px;
+        }
+   /*********************************/
 }
